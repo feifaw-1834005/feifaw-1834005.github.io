@@ -1,0 +1,61 @@
+<!DOCTYPE html> <html> 
+<head> 
+<title>Form Workshop</title> 
+<link rel="stylesheet" type="text/css" href="form.css" />
+</head> 
+<body> 
+<form> 
+<!---text field---> 
+<fieldset>
+    <legend>Husky Account</legend>
+    <div class="field">
+First name: <input type="text" name="firstname"> <br>
+Last name: <input type="text" name="lastname"> <br> 
+    </div>
+<!---password---> 
+<div class="field">
+Password: <input type="password" name="pwd"><br> 
+</div>
+</fieldset>
+<!---radio buttons---> 
+<fieldset>
+<legend>Availability</legend>
+<div class="field">
+    <label>Are you legally able to be employed in this country?</label><br>
+<input type="radio" name="answer" value="yes"> Yes <br>
+<input type="radio" name="answer" value="no"> No <br>
+</div>
+</fieldset>
+<!---checkboxes--->
+<fieldset>
+    <legend>Transportation</legend>
+    <div class="field">
+<input type="checkbox" name="vehicle" value="Bike"> I have a bike <br>
+<input type="checkbox" name="vehicle" value="Car"> I have a car <br>
+    </div>  
+<!---drop-down list---> 
+    <div class="field">
+        <label>Select the Car manufacturer</label><br>
+<select name="cars">
+<option value="volvo"> Volvo </option> 
+<option value="saab"> Saab </option> 
+<option value="fiat"> Fiat </option> 
+<option value="audi"> Audi </option> 
+</select><br> 
+    </div>
+</fieldset>
+<!---text area--->
+<fieldset> 
+    <legend>Self-Description</legend>
+    <div class="field">
+    <textarea name="essay" rows="6" cols="60">Tell us about yourself 
+    </textarea> <br> 
+    </div>
+</fieldset>
+<!---submit button---> 
+<div class="button">
+<input type="submit" value="Submit form"> <br>
+</div>
+</form> 
+</body> 
+</html> 
